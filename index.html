@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Resibo</h1>
+
+  <div class="gallery">
+    <img src="pic/mikko2.png" alt="Pic 1" onclick="openModal(this.src)">
+    <img src="pic/aj.jpg" alt="Pic 2" onclick="openModal(this.src)">
+    <img src="pic/mikko1.png" alt="Pic 3" onclick="openModal(this.src)">
+    <img src="pic/aj.jpg" alt="Pic 4" onclick="openModal(this.src)">
+    <img src="pic/marc.jpg" alt="Pic 5" onclick="openModal(this.src)">
+    <img src="pic/marc.jpg" alt="Pic 6" onclick="openModal(this.src)">
+  </div>
+
+  <div class="modal" id="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
